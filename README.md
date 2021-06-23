@@ -21,6 +21,8 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 Fun stuff to learn -- I spent the bulk of my time messing around with:
  - layering background images
  - clamping 
+ - making the countdown clock work with zero padded single digits
+
 That was hard enough, so I passed on trying to make the cards flip -- too fancy for me.
 
 Users should be able to:
@@ -41,7 +43,7 @@ Users should be able to:
 ## My process
 I stumbled a bit trying to work out the image placement and was about to try layering when I decided to look for examples of the challenge completed. Tip of the hat to @tediko -- an inspection of his site confirmed that layering was the right approach.
 
-I also picked at his (her?) code to mess with clamping the font size. While my solution is not identical, the strategy was directly borrowed. Not sure I fully understand using vw units, but messed about until things worked.
+I also picked at his (her?) code to mess with clamping the font size. While my solution is not identical (or perfect!), the strategy was directly borrowed. Not sure I fully understand using vw units, but messed about until things looked close to right. I did not have figma/sketch so JPEGs were used to approximate styling.
 
 Got the countdown clock working pretty well without the leading zeros but then followed many wrong paths trying to apply the leading zeros. Eventually I googled more specifically (something like pad numbers with zeros in js) and found the padStart() function which blew up a days worth of red herrings in 2 minutes.
 
@@ -83,7 +85,7 @@ The elegant padStart() function:
 
 ### Useful resources
 
-- [padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
+- [padStart()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
 
 ## Author
 
