@@ -1,0 +1,146 @@
+:root {
+--Grayish-blue: hsl(237, 18%, 59%);
+--Soft-red: hsl(345, 95%, 68%);
+--White: hsl(0, 0%, 100%);
+--Dark-desaturated-blue: hsl(236, 21%, 26%);
+--Very-dark-blue: hsl(235, 16%, 14%);
+--mostly-black-blue: hsl(234, 17%, 12%);
+}
+
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+
+    color: var(--White);
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    min-width: 320px;
+    min-height: 100vh;
+}
+.main {
+    background-color: var(--Very-dark-blue);
+    background-image: url('./images/pattern-hills.svg'),
+     url('./images/bg-stars.svg'), 
+     linear-gradient(to bottom, var(--mostly-black-blue) 17%, var(--Very-dark-blue) 51%,  #2b212d 83%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 89% 100%, center center;
+    background-size: 1100px, cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+@media (min-width: 750px) {
+    .main {
+        background-position: bottom center, center center;
+        background-size: contain;
+    }
+
+}
+
+h1 {
+    font-size: 1.2rem;
+    letter-spacing: 7px;
+    padding: 20vh 2rem 0 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    top: 50%;
+    margin: 10vh auto;
+}
+
+
+.countdown-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.thin {
+    background-color: inherit;
+    height: .15px;
+}
+#seconds, .seconds, #minutes, .minutes, #hours, .hours, #days, .days {
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 5px;
+    color: var(--Soft-red);
+    content: "";
+    display: flex;
+    font-size: clamp(1.6rem, 9vw, 3.73rem);
+    height: 8vw;
+    max-height: 57px;
+    justify-content: center;
+    overflow: hidden;
+    width: 17vw;
+}
+
+@media (max-width: 320px){
+    #seconds, .seconds, #minutes, .minutes, #hours, .hours, #days, .days {
+        height: 26px;
+        width: 54.4px;
+    }
+}
+
+@media (min-width: 750px){
+    .countdown {
+        gap: 30px;
+    }
+    #days, .days, #minutes, .minutes, #hours, .hours, #seconds, .seconds  {
+        height: 57px;
+        width: 127.5px;
+    }
+}
+
+#days, #hours, #minutes, #seconds {
+  align-items: flex-start;
+  padding-top: 13%;
+ }
+.days, .hours, .minutes, .seconds {
+    align-items: flex-end;
+    padding-bottom: 13%;
+}
+
+label {
+    color: var(--Grayish-blue);
+    font-size: .5rem;
+    letter-spacing: 2px;
+    margin-top: .5rem;
+    text-transform: uppercase;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 22px 0;
+    padding: .5rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    width: 100%;
+}
+
+.social_link {
+    margin-right: 30px;
+}
+/* .social_link:hover, .social_link:focus { */
+.social a:hover, .social a:focus {
+    transform: scale(1.4);
+}
+
+.attribution, .attribution a {
+    display: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
