@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [fm-launch-countdown-timer](https://github.com/techmeg/fm-launch-countdown-timer)
+- Live Site URL: [fm-launch-countdown-timer](https://techmeg.github.io/fm-launch-countdown-timer/)
 
 ## My process
 I stumbled a bit trying to work out the image placement and was about to try layering when I decided to look for examples of the challenge completed. Tip of the hat to @tediko -- an inspection of his site confirmed that layering was the right approach.
