@@ -8,7 +8,7 @@ const minutesToo = document.querySelector('.minutes');
 const hoursToo = document.querySelector('.hours');
 const daysToo = document.querySelector('.days');
 
-// originally thought I would set the launch timing here...
+// originally thought I would set the launch timing here...but ultimately just hard coded to match the design
 var secondsRemaining =  seconds.innerText;
 var minutesRemaining = minutes.innerText;
 var hoursRemaining = hours.innerText;

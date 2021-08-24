@@ -80,7 +80,8 @@ h1 {
     display: flex;
     font-size: clamp(1.6rem, 9vw, 3.73rem);
     height: 8vw;
-    max-height: 57px;
+    max-height: 56px;
+    max-width:127.5px;
     justify-content: center;
     overflow: hidden;
     width: 17vw;
@@ -97,10 +98,6 @@ h1 {
     .countdown {
         gap: 30px;
     }
-    #days, .days, #minutes, .minutes, #hours, .hours, #seconds, .seconds  {
-        height: 57px;
-        width: 127.5px;
-    }
 }
 
 #days, #hours, #minutes, #seconds {
@@ -114,11 +111,17 @@ h1 {
 
 label {
     color: var(--Grayish-blue);
-    font-size: .5rem;
-    letter-spacing: 2px;
-    margin-top: .5rem;
+    font-size: clamp(.4rem, 2.1vw, .75rem);
+    font-weight: 400;
+    letter-spacing: max(3px, .35em);
+    margin-top: 1rem;
     text-transform: uppercase;
 }
+/* @media(min-width: 750px) {
+    label {
+        font-size: 1rem;
+    }
+} */
 
 .social {
     display: flex;
